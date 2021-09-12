@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Automated Question Generation and Answer Verification using Digital Data</title>
-  <meta property="og:title" content="Automated Question Generation and Answer Verification using Digital Data" />
-  <meta property="og:image" content="https://shahsaumya.github.io/img/IMG_20200808_154558.jpg" />
+  <title>Lead Allocation & Meeting Scheduler App</title>
+  <meta property="og:title" content="Lead Allocation & Meeting Scheduler App" />
+  <meta property="og:image" content="https://kshitija-surange.github.io/img/IMG_20200808_154558.jpg" />
   <meta name="description" content="">
   <meta property="og:description" content="" />
   <meta name="contactNote" content="" />
@@ -19,8 +19,8 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
   
-  <link href="https://shahsaumya.github.io/css/resume.css" rel="stylesheet">
-  <link href="https://shahsaumya.github.io/css/tweaks.css" rel="stylesheet">
+  <link href="https://kshitija-surange.github.io/css/resume.css" rel="stylesheet">
+  <link href="https://kshitija-surange.github.io/css/tweaks.css" rel="stylesheet">
   <meta name="generator" content="Hugo 0.68.3" />
   
    
@@ -29,7 +29,7 @@
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
-    <span class="d-block d-lg-none">Saumya Shah</span>
+    <span class="d-block d-lg-none">Kshitija Surange</span>
     <span class="d-none d-lg-block">
       <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/IMG_20200808_154558.jpg" alt="">
     </span>
@@ -94,22 +94,22 @@
 
 
 <li class="breadcrumb-item">
-  <a href="https://shahsaumya.github.io/">Home</a>
+  <a href="https://kshitija-surange.github.io/">Home</a>
 </li>
 
 
 <li class="breadcrumb-item">
-  <a href="https://shahsaumya.github.io/projects/">Projects</a>
+  <a href="https://kshitija-surange.github.io/projects/">Projects</a>
 </li>
 
 
 <li class="breadcrumb-item">
-  <a href="https://shahsaumya.github.io/projects/creations/">Creations</a>
+  <a href="https://kshitija-surange.github.io/projects/creations/">Creations</a>
 </li>
 
 
 <li class="breadcrumb-item active">
-  <a href="https://shahsaumya.github.io/projects/creations/automated_vqg/">Automated Question Generation and Answer Verification using Digital Data</a>
+  <a href="https://kshitija-surange.github.io/projects/creations/tsp/">Lead Allocation & Meeting Scheduler App</a>
 </li>
 
   </ol>
@@ -120,12 +120,12 @@
 
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
-    <h2 class="mb-0"><span class="text-primary">Automated Question Generation and Answer Verification using Digital Data</span></h2>
-    <p>In recent years, we have witnessed a significant progress in various fields of AI, such as computer vision, as well as language understanding. These progress motivated researchers to address a more challenging problem: question answering and question generation on visual data. This problem combines both image understanding as well as language understanding. <!-- raw HTML omitted --></p>
-<p>Essentially, this task is defined as follows: an image along with a question about that image is the input to the AI system, and the intelligent system is supposed to output a correct answer to the question with respect the input image. However, taking a step beyond that, we through this project, aim to create a system which on taking an image as input generates a question-answer pair and when the user submits the answer, verification of the answer takes place. <!-- raw HTML omitted --></p>
-<p>Our solution thus involves the usage of both the Visual Question Generation (VQG) and VQA model in a sequential manner. The VQG module generates reasonable questions given an image whereas, the VQA module generates natural answers given a question and an image. On the basis of the image, the VQG and VQA module will be used to get the correct question and then the answer.<!-- raw HTML omitted --></p>
-<p>The proposed solution will aim towards bridging the gap and assimilating verification of answers on the existing question answer generation platforms. The most immediate application is as an automatic dataset annotation tool. We can reduce the need for human intervention for dataset annotation. With an increasing need for varied datasets for Deep Learning, such applications can help reduce the need for human labour. Further, the solution will benefit the educational sector, as well as help, improve existing authentication using captcha. In the educational sector, children can use such an application to learn to answer basic questions from images. While these same images can be used as an extra step in authentication to increase the security of the project. <!-- raw HTML omitted --></p>
-<p>Received a grant from the University of Mumbai</p>
+    <h2 class="mb-0"><span class="text-primary">Lead Allocation & Meeting Scheduler App</span></h2>
+    <p>Lead allocation was not effective as a Round Robin allocation was in proctice which considered neither the location nor the availability of the aganets as well as customers leading to dissatisfaction at both ends. <!-- raw HTML omitted --></p>
+<p>I was assigned to design and develop the serverless backend architecture on AWS using Lambda, DMS, Dynamodb, Step Function, ECR, ECS, S3, etc. I chose serverless architecture with dynamodb as my main database and used DMS to keep it in sync with legacy systems (on-prem oracle dbs) <!-- raw HTML omitted --></p>
+<p>For scheduling meeting and reducing travel, I developed a capacitated TSP solver with time window constraints using Google OR tools, along with osrm backend for time-distance complexity (to compute adjacency matrix). Both of them were deployed as a docker container as a service using ECS/ECR.<!-- raw HTML omitted --></p>
+<p> The availability of the customers was fetched using the app and the availability of the agents was fetched using HR database. There were two types of run scheduled allocation and real-time allocation. For this, I used lambdas and step functions. This was a complete serverless solution.<!-- raw HTML omitted --></p>
+<!-- <p>Received a grant from the University of Mumbai</p> -->
 
     
     <ul class="tags">
