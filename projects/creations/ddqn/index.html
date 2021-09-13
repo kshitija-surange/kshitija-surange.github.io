@@ -121,8 +121,13 @@
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
     <h2 class="mb-0"><span class="text-primary">Medical Risk Classification using Reinforcement Learning & Costly Features</span></h2>
-    <p>Built a Gamma-Poisson classifier to represent the similarity between records in disparate datasets. Our efforts showed impressive results, even better than the probabilistic approach proposed by Fellegi-Sunter. The prototype has now been launched as a stand-alone framework for entity resolution developed by the company, and I have also managed to submit a paper based on our research to AIStats. This classifier can work with streaming, sparse and sequential data</p>
+    <p>The system in place was Magnum, a Swiss Re underwriting automation product. It is a legacy software that used to work in batch mode, creating pending logs and adding tat. The aim was to use Machine Learning to produce a risk classification better than Magnum as well as reduce cost of classification by using lesser information from third party APIs. </p>
 
+    <p>The training environment was formalised as per Markov's Decision process (MDP). In this setting, the DDQN algorithm has to classify a sample, but can only reveal its features at a defined cost. Each sample is treated independently, and for each sample the algorithm sequentially selects features conditioning on values already revealed. Inherently, a different subset of features can be selected for different samples.</p>
+
+    <p>Each sample corresponds to an episode, where an agent sequentially decides whether to acquire another feature and which, or whether to already classify the sample. At each step, the agent can base its decision on the values of the features acquired so far. For the actions requesting a feature, the agent receives a negative reward, equal to the feature cost. For the classification actions, the reward is based on whether the prediction is correct.</p>
+
+    <p>All the state, actions, rewards and next state taken are stored in a memory and used for training the network.</p>
     
     <ul class="tags">
     
