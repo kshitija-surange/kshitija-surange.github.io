@@ -4,13 +4,14 @@ logo: "/images/picture.png?raw=true"
 
 description:
   <p align="center">
-  <a href="pdf/resume.pdf">Resume</a> |
+  # <a href="pdf/resume.pdf">Resume</a> |
   <a href="https://www.linkedin.com/in/kshitija-surange/">LinkedIn</a> |
   <a href="https://github.com/kshitija-surange">GitHub</a>
   </p>
   
+  > 
   <p align="justify">
-  Hi, I am kshitija! an alumnus of IIT Kharagpur ':woman_student:' and an experienced Data Scientist. 
+  Hi, I am kshitija! a Data Scientist with 3 years of experience. I am an alumnus of IIT Kharagpur :woman_student: and currently working as Applied Data Scientist 2 in Mumbai.
   <br><br>
   Thank you for stopping by, you can check some of my projects here.
   <br><br>
