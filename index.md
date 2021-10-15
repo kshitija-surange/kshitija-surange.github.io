@@ -98,7 +98,7 @@ Features
 ---
 ## Open Source
 
-### Credit Risk Prediction Web App
+### PyraDox
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/kshitija-surange/PyraDox)
 
 PyraDox is a simple tool which helps in document digitization by extracting text information and masking of personal information with the help of Tesseract-ocr.
