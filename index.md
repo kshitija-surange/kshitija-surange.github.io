@@ -11,6 +11,11 @@
 **Neural Machine Translation:** The huge fallout in the customer onboarding journey was impacting the business. The objective was to <b>reduce fallout by analyzing the daily data consists of issues raised by customers and support teams as free-flowing text</b> in pending reasons data at various stages of issuance. 
 <!-- ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)). -->
 
+
+| Submission Date | Pending Stage | Ticket Text | RigPending Dateht   |
+| ------------- |:-------------:| -------:| -------:|
+| Date at which documents were submitted | Stage at which journey is stuck | Reason in plain text, why it is stuck | Current Date |
+
 **Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 5.11 % in following month. 
 
 Prior to LDA, the text data had to be pre-processed which included steps such as :
