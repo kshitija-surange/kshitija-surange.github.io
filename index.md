@@ -1,4 +1,4 @@
-# Portfolio
+# Projects
 ---
 ## Natural Language Processing
 
