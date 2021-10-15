@@ -2,15 +2,24 @@
 ---
 ## Natural Language Processing
 
-### CS224n: Natural Language Processing with Deep Learning
+### REDUCTION IN CUSTOMER DROPOUTS USING LDA TOPIC MODELLING
 
-My complete implementation of assignments and projects in [***CS224n: Natural Language Processing with Deep Learning***](http://web.stanford.edu/class/cs224n/) by Stanford (Winter, 2019).
+<!-- My complete implementation of assignments and projects in [***CS224n: Natural Language Processing with Deep Learning***](http://web.stanford.edu/class/cs224n/) by Stanford (Winter, 2019).
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/) -->
 
-**Neural Machine Translation:** An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)).
+**Neural Machine Translation:** The huge fallout in the customer onboarding journey was impacting the business. The objective was to <b>reduce fallout by analyzing the daily data consists of issues raised by customers and support teams as free-flowing text</b> in pending reasons data at various stages of issuance. 
+<!-- ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)). -->
 
-**Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
+**Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 5.11 % in following month. 
+
+Prior to LDA, the text data had to be pre-processed which included steps such as :
+
+*  Data Preprocessing - The process involved collecting raw data, segmenting sentences, converting to tokens, stop word removal, lemmatization, and stemming
+*  Content Selection - We used Latent Dirichlet Allocation to select the most important sentences that contribute to the summary. To improve the accuracy of LDA, we used TF-IDF scores that rank the words of a document based on importance and relevance.
+*  Information Ordering - This phase helps in ordering these selected sentences so that the summary is coherent. We used cosine similarity to discard any redundant sentences and use pairwise cosine scores to determine the most coherent ordering.
+
+*  Content Realization - This phase makes the final touches on the sentences, removing any extraneous parts of sentences that would make them wordy, etc. To do this, we used methods like removing parenthesis, eliminating sentences shorter than 8 words, removing adverbs, etc.
 
 <center><img src="images/nlp.png"/></center>
 
@@ -105,4 +114,4 @@ My complete implementation of assignments and projects in [***CS224n: Natural La
 - [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
 
 ---
-<center>© 2020 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
+<center>© 2021 kshitija surange. Powered by Jekyll and the Minimal Theme.</center>
