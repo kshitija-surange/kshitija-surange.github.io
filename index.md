@@ -24,7 +24,14 @@ Finally gives the probability distribution of topics within each document and wo
 <!-- 
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1f32gj5IYIyFipoINiC8P3DvKat-WWLUK) -->
 
-<div style="text-align: justify">The release of Google's BERT is described as the beginning of a new era in NLP. In this notebook I'll use the HuggingFace's transformers library to fine-tune pretrained BERT model for a classification task. Then I will compare BERT's performance with a baseline model, in which I use a TF-IDF vectorizer and a Naive Bayes classifier. The transformers library helps us quickly and efficiently fine-tune the state-of-the-art BERT model and yield an accuracy rate 10% higher than the baseline model.</div>
+**Business Case:**
+<div style="text-align: justify">Lead allocation was not effective as a Round Robin allocation was in practice which considered neither the location nor the availability of the agents as well as customers leading to dissatisfaction at both ends.</div>
+
+**Solution:** <b>Designed and develop the serverless backend architecture on AWS </b> using Lambda, DMS, Dynamodb, Step Function, ECR, ECS, S3, etc. Setup an <b>ETL pipeline with DMS</b> to keep it in sync with legacy systems (on-prem oracle DBS)
+
+For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)<u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
+
+The availability of the customers was fetched using the app and the availability of the agents was taken from SAP HRM. There were two types of run scheduled allocation and real-time allocation. For this, I used lambdas and step functions. 
 
 <center><img src="images/BERT-classification.png"/></center>
 
