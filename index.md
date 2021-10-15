@@ -24,22 +24,21 @@ Finally gives the probability distribution of topics within each document and wo
 <!-- 
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1f32gj5IYIyFipoINiC8P3DvKat-WWLUK) -->
 
-**Business Case:**
-<div style="text-align: justify">Lead allocation was not effective as a Round Robin allocation was in practice which considered neither the location nor the availability of the agents as well as customers leading to dissatisfaction at both ends.</div>
+**Business Case:**Lead allocation was not effective as a Round Robin allocation was in practice which considered neither the location nor the availability of the agents as well as customers leading to dissatisfaction at both ends.
 
 **Solution:** <b>Designed and develop the serverless backend architecture on AWS </b> using Lambda, DMS, Dynamodb, Step Function, ECR, ECS, S3, etc. Setup an <b>ETL pipeline with DMS</b> to keep it in sync with legacy systems (on-prem oracle DBS)
 
-For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)<u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
+For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)</u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
 
 The availability of the customers was fetched using the app and the availability of the agents was taken from SAP HRM. There were two types of run scheduled allocation and real-time allocation. For this, I used lambdas and step functions. 
 
 <center><img src="images/BERT-classification.png"/></center>
 
 ---
-### Detect Food Trends from Facebook Posts: Co-occurence Matrix, Lift and PPMI
+### MEDICAL RISK CLASSIFICATION USING REINFORCEMENT LEARNING & COSTLY FEATURES
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends)
+<!-- [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends) -->
 
 <div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
 <br>
