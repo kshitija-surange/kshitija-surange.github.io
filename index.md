@@ -28,7 +28,7 @@ Finally gives the probability distribution of topics within each document and wo
 
 **Solution:** <b>Designed and develop the serverless backend architecture on AWS </b> using Lambda, DMS, Dynamodb, Step Function, ECR, ECS, S3, etc. Setup an <b>ETL pipeline with DMS</b> to keep it in sync with legacy systems (on-prem oracle DBS)
 
-For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)</u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
+For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR-tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)</u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
 
 The availability of the customers was fetched using the app and the availability of the agents was taken from SAP HRM. There were two types of run scheduled allocation and real-time allocation. For this, I used lambdas and step functions. 
 
