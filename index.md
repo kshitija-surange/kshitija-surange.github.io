@@ -40,18 +40,30 @@ The availability of the customers was fetched using the app and the availability
 <!-- [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends) -->
 
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+**Business Case:**Medical risk classification is cumbersome and the journey is even more difficult for the policy buyer as the number of questions asked can range from 250 - 500. The underwriters are humans adding baises and intuitions thus making different choices on similar policies.
+
+**Solution:** Underwriting automation with a `Deep reinforcement learning agent` reducing <u>the number of questions to 40</u>. The solution brings the first implementation of the artificial brain taking a crucial decision, with a self-learning Insurance Underwriting engine using a Double DQN algorithm.
+
+**Training & Deployment Process :**
+Identified & extracted training data from SQL database using <b>Apache Flink</b> via JDBC and trained the engine with 1 million+ data points on AWS(EC2) & exposed it as a service (using Flask microservices) <b>achieving 91% accuracy of classification</b> with 40 questions asked at max.
+
+**DRL:**
+The training environment was formalized as per <b>Markov's Decision process (MDP)</b>. In this setting, the `DDQN algorithm has to classify a sample`, but can only reveal its features at a defined cost. Each sample is treated independently, and for each sample, the algorithm sequentially selects features conditioning on values already revealed. Inherently, a different subset of features can be selected for different samples.
+
+Each sample corresponds to an episode, where an agent sequentially decides whether to acquire another feature and which, or whether to already classify the sample. At each step, the agent can base its decision on the values of the features acquired so far. For the actions requesting a feature, the agent receives a negative reward, equal to the feature cost. For the classification actions, the reward is based on whether the prediction is correct.
+
+
 <br>
 <center><img src="images/fb-food-trends.png"></center>
 <br>
 
 ---
-### Detect Spam Messages: TF-IDF and Naive Bayes Classifier
+### Virtual Customer onboarding with Face Recognition
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-spam-nlp.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/detect-spam-messages-nlp/blob/master/detect-spam-nlp.ipynb)
+Developed a <b>Face recognition system to reduce fraud in virtual customer onboarding</b> with a face-matching algorithm that compared faces of customers from the frames of mandatory video with their KYC documents submitted at the time of application.
 
-<div style="text-align: justify">In order to predict whether a message is spam, first I vectorized text messages into a format that machine learning algorithms can understand using Bag-of-Word and TF-IDF. Then I trained a machine learning model to learn to discriminate between normal and spam messages. Finally, with the trained model, I classified unlabel messages into normal or spam.</div>
+• Face matching uses <u>face embeddings from DeepFace (Facebook) model</u> with the help of haar cascade, dlib and OpenCV.
+• Trained a <b>CNN model for anti-spoofing</b> and deployed the model as a service using `Docker` and `ECS` on the `serverless backend on AWS`.
 <br>
 <center><img src="images/detect-spam-nlp.png"/></center>
 <br>
