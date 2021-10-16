@@ -12,11 +12,11 @@
 <!-- ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)). -->
 
 **Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 5.11 % in following month. 
-
+<center><img src="images/LDA.jpg"></center>
 `Latent Dirichlet Allocation` to select the most important sentences that contribute to the summary. To improve the accuracy of LDA, we used TF-IDF scores that rank the words of a document based on importance and relevance.
 Finally gives the probability distribution of topics within each document and word distribution in topics.
 
-<center><img src="images/nlp.png"/></center>
+<center><img src="images/Topic.png"/></center>
 
 ---
 ### ROUTE OPTIMISATION & LEAD ALLOCATION APP
