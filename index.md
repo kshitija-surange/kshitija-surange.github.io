@@ -25,14 +25,14 @@ Finally gives the probability distribution of topics within each document and wo
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1f32gj5IYIyFipoINiC8P3DvKat-WWLUK) -->
 
 **Business Case:**Lead allocation was not effective as a Round Robin allocation was in practice which considered neither the location nor the availability of the agents as well as customers leading to dissatisfaction at both ends.
-
+<center><img src="images/Route_opt.jpg"/></center>
 **Solution:** <b>Designed and develop the serverless backend architecture on AWS </b> using Lambda, DMS, Dynamodb, Step Function, ECR, ECS, S3, etc. Setup an <b>ETL pipeline with DMS</b> to keep it in sync with legacy systems (on-prem oracle DBS)
 
 For scheduling meetings and reducing travel, I developed a `capacitated TSP solver with time window constraints using Google OR-tools`, along with osrm backend for <u>time-distance complexity (to compute adjacency matrix)</u>. Both of them were deployed as a `docker container as a service` using ECS, ECR and Fargate.
 
 The availability of the customers was fetched using the app and the availability of the agents was taken from SAP HRM. There were two types of run scheduled allocation and real-time allocation. For this, I used lambdas and step functions. 
 
-<center><img src="images/BERT-classification.png"/></center>
+<center><img src="images/route_backend.jpeg"/></center>
 
 ---
 ### MEDICAL RISK CLASSIFICATION USING REINFORCEMENT LEARNING & COSTLY FEATURES
@@ -65,7 +65,7 @@ Developed a <b>Face recognition system to reduce fraud in virtual customer onboa
 • Face matching uses <u>face embeddings from DeepFace (Facebook) model</u> with the help of haar cascade, dlib and OpenCV.
 • Trained a <b>CNN model for anti-spoofing</b> and deployed the model as a service using `Docker` and `ECS` on the `serverless backend on AWS`.
 <br>
-<center><img src="images/detect-spam-nlp.png"/></center>
+<center><img src="images/Facematch.jpg"/></center>
 <br>
 
 ---
