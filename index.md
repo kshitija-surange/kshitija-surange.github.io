@@ -103,8 +103,7 @@ Features
 
 PyraDox is a simple tool which helps in document digitization by extracting text information and masking of personal information with the help of Tesseract-ocr.
 
-<br>
-<center><img src="images/pyradox_feat2.jpg"/></center>
+<center><img src="images/pyradox_feat.jpg"/></center>
 <br>
 ---
 <center>© 2021 kshitija surange. Powered by Jekyll and the Minimal Theme.</center>
