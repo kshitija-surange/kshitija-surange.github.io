@@ -101,6 +101,10 @@ Features
 ### PyraDox
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/kshitija-surange/PyraDox)
 
+<br>
+<center><img src="images/pyradox_feat.jpg"/></center>
+<br>
+
 PyraDox is a simple tool which helps in document digitization by extracting text information and masking of personal information with the help of Tesseract-ocr.
 
 ---
