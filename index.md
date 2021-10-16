@@ -71,28 +71,27 @@ Developed a <b>Face recognition system to reduce fraud in virtual customer onboa
 ---
 ## Hackathons
 
-### Share 2 Secure Winner <b>Microsoft Azure</b> Hack
+### Share-2-Secure Winner <b>Microsoft Azure</b> Hack
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/kshitija-surange/Share-To-Secure)
-
+<center><img src="images/Architecture.png"/></center>
 Share to Secure Application for Blockchain-Enabled Insurance on Azure Blockchain Workbench. 
 Features 
 • Shared view of truth 
 • Programmable transfers 
 • Transparency for relevant institutions 
 
-<br>
-<center><img src="images/credit-risk-webapp.png"/></center>
+<center><img src="images/ShareToSecure.jpg"/></center>
 <br>
 
 ---
 ### Meraki - 1st Runner's Up in MishMash Hack 
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/kshitija-surange/Meraki-mishmash)
-
+<center><img src="images/Idea.jpeg"/></center>
 <div style="text-align: justify">Fast Route Planning & `Route Optimisation` with the help of traveling salesman problem (TSP) algorithm.</div>
 <br>
-<center><img src="images/ames-house-price.jpg"/></center>
+<center><img src="images/MISHMASH (1).png"/></center>
 <br>
 
 ---
