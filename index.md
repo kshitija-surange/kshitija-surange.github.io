@@ -41,11 +41,13 @@ The availability of the customers was fetched using the app and the availability
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends) -->
 
 **Business Case:**Medical risk classification is cumbersome and the journey is even more difficult for the policy buyer as the number of questions asked can range from 250 - 500. The underwriters are humans adding baises and intuitions thus making different choices on similar policies.
+<center><img src="images/ps.png"></center>
 
-**Solution:** Underwriting automation with a `Deep reinforcement learning agent` reducing <u>the number of questions to 40</u>. The solution brings the first implementation of the artificial brain taking a crucial decision, with a self-learning Insurance Underwriting engine using a Double DQN algorithm.
-
+**Solution:** Underwriting automation with a `Deep reinforcement learning agent` reducing <u>the number of questions to 50</u>. The solution brings the first implementation of the artificial brain taking a crucial decision, with a self-learning Insurance Underwriting engine using a Double DQN algorithm.
+<center><img src="images/cm.jpg"></center>
 **Training & Deployment Process :**
-Identified & extracted training data from SQL database using <b>Apache Flink</b> via JDBC and trained the engine with 1 million+ data points on AWS(EC2) & exposed it as a service (using Flask microservices) <b>achieving 91% accuracy of classification</b> with 40 questions asked at max.
+Identified & extracted training data from SQL database using <b>Apache Flink</b> via JDBC and trained the engine with 1 million+ data points on AWS(EC2) & exposed it as a service (using Flask microservices) <b>achieving 91% accuracy of classification</b> with 50 questions asked at max.
+<center><img src="images/Train_deploy.png"></center>
 
 **DRL:**
 The training environment was formalized as per <b>Markov's Decision process (MDP)</b>. In this setting, the `DDQN algorithm has to classify a sample`, but can only reveal its features at a defined cost. Each sample is treated independently, and for each sample, the algorithm sequentially selects features conditioning on values already revealed. Inherently, a different subset of features can be selected for different samples.
