@@ -14,7 +14,8 @@
 
 **Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 5.11 % in following month. 
 <center><img src="images/LDA.jpg"></center>
-`Latent Dirichlet Allocation` to select the most important sentences that contribute to the summary. To improve the accuracy of LDA, we used TF-IDF scores that rank the words of a document based on importance and relevance.
+
+`Latent Dirichlet Allocation (LDA)` is a popular topic modeling technique to extract topics from a given corpus. The term latent conveys something that exists but is not yet developed. In other words, latent means hidden or concealed.
 Finally gives the probability distribution of topics within each document and word distribution in topics.
 
 <center><img src="images/Topic.png"/></center>
