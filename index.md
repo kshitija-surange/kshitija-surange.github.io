@@ -1,5 +1,31 @@
 # Projects
 ---
+
+### MEDICAL RISK CLASSIFICATION USING REINFORCEMENT LEARNING & COSTLY FEATURES
+
+<!-- [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends) -->
+
+**Business Case:**Medical risk classification is cumbersome and the journey is even more difficult for the policy buyer as the number of questions asked can range from 250 - 500. The underwriters are humans adding baises and intuitions thus making different choices on similar policies.
+<center><img src="images/cm.jpg"></center>
+
+
+**Solution:** Underwriting automation with a `Deep reinforcement learning agent` reducing <u>the number of questions to 50</u>. The solution brings the first implementation of the artificial brain taking a crucial decision, with a self-learning Insurance Underwriting engine using a Double DQN algorithm.
+<center><img src="images/ps2.png"></center>
+
+**Training & Deployment Process :**
+Identified & extracted training data from SQL database using <b>Apache Flink</b> via JDBC and trained the engine with 1 million+ data points on AWS(EC2) & exposed it as a service (using Flask microservices) <b>achieving 91% accuracy of classification</b> with 50 questions asked at max.
+<center><img src="images/Train_deploy.png"></center>
+
+**DRL: Double Deep Q-learning**
+The training environment was formalized as per <b>Markov's Decision process (MDP)</b>. In this setting, the `DDQN algorithm has to classify a sample`, but can only reveal its features at a defined cost. Each sample is treated independently, and for each sample, the algorithm sequentially selects features conditioning on values already revealed. Inherently, a different subset of features can be selected for different samples.
+
+Each sample corresponds to an episode, where an agent sequentially decides whether to acquire another feature and which, or whether to already classify the sample. At each step, the agent can base its decision on the values of the features acquired so far. For the actions requesting a feature, the agent receives a negative reward, equal to the feature cost. For the classification actions, the reward is based on whether the prediction is correct.
+
+<center><img src="images/DDQN.jpg"></center>
+<br>
+
+---
 ## Natural Language Processing
 
 ### REDUCTION IN CUSTOMER DROPOUTS USING LDA TOPIC MODELLING
@@ -37,29 +63,7 @@ The availability of the customers was fetched using the app and the availability
 <center><img src="images/route_backend.jpeg"/></center>
 
 ---
-### MEDICAL RISK CLASSIFICATION USING REINFORCEMENT LEARNING & COSTLY FEATURES
 
-<!-- [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends) -->
-
-**Business Case:**Medical risk classification is cumbersome and the journey is even more difficult for the policy buyer as the number of questions asked can range from 250 - 500. The underwriters are humans adding baises and intuitions thus making different choices on similar policies.
-<center><img src="images/ps2.png"></center>
-
-**Solution:** Underwriting automation with a `Deep reinforcement learning agent` reducing <u>the number of questions to 50</u>. The solution brings the first implementation of the artificial brain taking a crucial decision, with a self-learning Insurance Underwriting engine using a Double DQN algorithm.
-<center><img src="images/cm.jpg"></center>
-**Training & Deployment Process :**
-Identified & extracted training data from SQL database using <b>Apache Flink</b> via JDBC and trained the engine with 1 million+ data points on AWS(EC2) & exposed it as a service (using Flask microservices) <b>achieving 91% accuracy of classification</b> with 50 questions asked at max.
-<center><img src="images/Train_deploy.png"></center>
-
-**DRL: Double Deep Q-learning**
-The training environment was formalized as per <b>Markov's Decision process (MDP)</b>. In this setting, the `DDQN algorithm has to classify a sample`, but can only reveal its features at a defined cost. Each sample is treated independently, and for each sample, the algorithm sequentially selects features conditioning on values already revealed. Inherently, a different subset of features can be selected for different samples.
-
-Each sample corresponds to an episode, where an agent sequentially decides whether to acquire another feature and which, or whether to already classify the sample. At each step, the agent can base its decision on the values of the features acquired so far. For the actions requesting a feature, the agent receives a negative reward, equal to the feature cost. For the classification actions, the reward is based on whether the prediction is correct.
-
-<center><img src="images/DDQN.jpg"></center>
-<br>
-
----
 ### Virtual Customer onboarding with Face Recognition
 
 Developed a <b>Face recognition system to reduce fraud in virtual customer onboarding</b> with a face-matching algorithm that compared faces of customers from the frames of mandatory video with their KYC documents submitted at the time of application.
