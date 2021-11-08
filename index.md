@@ -38,7 +38,7 @@ Each sample corresponds to an episode, where an agent sequentially decides wheth
 **Business Case:** The huge fallout in the customer onboarding journey was impacting the business. The objective was to <b>reduce fallout by analyzing the daily data consists of issues raised by customers and support teams as free-flowing text</b> in pending reasons data at various stages of issuance. 
 <!-- ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)). -->
 
-**Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 5.11 % in following month. 
+**Solution:** For solving this I analyzed the customer onboarding journey to increase conversion using Gensim <b> LDA topic modeling</b>  on pending tickets text and developed  an <u> interactive visualization with plotly Sankey</u> . With this, Issuance increased by 6.2 % in following month. 
 <center><img src="images/LDA.jpg"></center>
 
 `Latent Dirichlet Allocation (LDA)` is a popular topic modeling technique to extract topics from a given corpus. The term latent conveys something that exists but is not yet developed. In other words, latent means hidden or concealed.
